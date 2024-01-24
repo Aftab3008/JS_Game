@@ -133,10 +133,10 @@ main {
   top: 4rem;
 }
 .btn--roll {
-  top: 39.3rem;
+  top: 45rem;
 }
 .btn--hold {
-  top: 46.1rem;
+  top: 51.8rem;
 }
 
 .btn:active {
@@ -167,4 +167,66 @@ main {
 }
 .hidden{
   display: none;
+}
+/* General styles for smaller screens */
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+    height: auto;
+  }
+
+  .player {
+    padding: 4rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .score {
+    font-size: 5rem;
+  }
+
+  .current-score {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .dice {
+    height: 6rem;
+    top: 12rem;
+  }
+  
+  .btn--new {
+    top: 3.5rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .score {
+    font-size: 4rem;
+  }
+
+  .current-score {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.2rem 1.2rem;
+  }
+
+  .dice {
+    height: 4rem;
+    top: 9rem;
+  }
 }
